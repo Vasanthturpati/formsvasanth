@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Contact Form</title>
+</head>
+<body>
+
+  <h1>Contact Us</h1>
+
+  <form action="https://example.com/submit" method="POST">
+    
+    <!-- Text input -->
+    <label for="fullname">Full Name:</label><br>
+    <input type="text" id="fullname" name="fullname" required><br><br>
+
+    <!-- Email -->
+    <label for="email">Email:</label><br>
+    <input type="email" id="email" name="email" required><br><br>
+
+    <!-- Password -->
+    <label for="password">Password:</label><br>
+    <input type="password" id="password" name="password"><br><br>
+
+    <!-- Phone Number -->
+    <label for="phone">Phone:</label><br>
+    <input type="tel" id="phone" name="phone"><br><br>
+
+    <!-- Radio buttons -->
+    <label>Gender:</label><br>
+    <input type="radio" id="male" name="gender" value="male">
+    <label for="male">Male</label><br>
+    <input type="radio" id="female" name="gender" value="female">
+    <label for="female">Female</label><br><br>
+
+    <!-- Checkboxes -->
+    <label>Interests:</label><br>
+    <input type="checkbox" id="coding" name="interests" value="coding">
+    <label for="coding">Coding</label><br>
+    <input type="checkbox" id="music" name="interests" value="music">
+    <label for="music">Music</label><br><br>
+
+    <!-- Date -->
+    <label for="dob">Date of Birth:</label><br>
+    <input type="date" id="dob" name="dob"><br><br>
+
+    <!-- File Upload -->
+    <label for="resume">Upload Resume:</label><br>
+    <input type="file" id="resume" name="resume"><br><br>
+
+    <!-- Select dropdown -->
+    <label for="country">Country:</label><br>
+    <select id="country" name="country">
+      <option value="india">India</option>
+      <option value="usa">USA</option>
+      <option value="uk">UK</option>
+    </select><br><br>
+
+    <!-- Textarea -->
+    <label for="message">Your Message:</label><br>
+    <textarea id="message" name="message" rows="4" cols="40"></textarea><br><br>
+
+    <!-- Hidden Input -->
+    <input type="hidden" name="formType" value="contactForm">
+
+    <!-- Submit and Reset -->
+    <input type="submit" value="Send Message">
+    <input type="reset" value="Reset">
+
+  </form>
+
+</body>
+</html>
