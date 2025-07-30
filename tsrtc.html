@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>TSRTC General Bus Pass Application</title>
+    </head>
+    <body>
+
+        <center>
+            <img src="./images/logo1.jpg" alt="" height="100" width="70%">
+        </center>
+
+        <form>
+
+            <fieldset>
+                <legend><b>Applicant Details</b></legend>
+                <table>
+                    <tr>
+                        <td>Name *</td>
+                        <td><input type="text" name="name" required></td>
+                        <td>Father/Guardian Name *</td>
+                        <td><input type="text" name="father_name" required></td>
+                    </tr>
+                    <tr>
+                        <td>Date of Birth *</td>
+                        <td><input type="date" name="dob" required></td>
+                        <td>Gender *</td>
+                        <td>
+                            <input type="radio" name="gender" value="Female"
+                                required> Female
+                            <input type="radio" name="gender" value="Male"> Male
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Age As on:</td>
+                        <td colspan="3">
+                            <input type="number" name="age_years"
+                                placeholder="Years(s)" style="width:60px;">
+                            <input type="number" name="age_months"
+                                placeholder="Months(s)" style="width:60px;">
+                            <input type="number" name="age_days"
+                                placeholder="Days(s)" style="width:60px;">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Aadhar No *</td>
+                        <td><input type="text" name="aadhar" required></td>
+                        <td>WhatsApp No *</td>
+                        <td><input type="text" name="whatsapp" required></td>
+                    </tr>
+                    <tr>
+                        <td>Photo *</td>
+                        <td><input type="file" name="photo" required></td>
+                        <td>E-Mail Id *</td>
+                        <td><input type="email" name="email" required></td>
+                    </tr>
+                </table>
+            </fieldset>
+
+
+            <fieldset>
+                <legend><b>Residential Details</b></legend>
+                <table>
+                    <tr>
+                        <td>Applicant Address *</td>
+                        <td colspan="3"><textarea name="address" rows="3"
+                                cols="50" required></textarea></td>
+                    </tr>
+                    <tr>
+                        <td>District *</td>
+                        <td>
+                            <select name="district" required>
+                                <option value="Hyderabad">Hyderabad</option>
+
+                            </select>
+                        </td>
+                        <td>Mandal *</td>
+                        <td>
+                            <select name="mandal" required>
+                                <option value="Charminar">Charminar</option>
+
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Village *</td>
+                        <td>
+                            <select name="village" required>
+                                <option value="Hyderabad">Hyderabad</option>
+                            </select>
+                        </td>
+                        <td>Pincode *</td>
+                        <td><input type="text" name="pincode" required></td>
+                    </tr>
+                </table>
+            </fieldset>
+
+
+            <fieldset>
+                <legend><b>Pass Type Details</b></legend>
+                <table>
+                    <tr>
+                        <td>City *</td>
+                        <td>
+                            <select name="city" required>
+                                <option value="Hyderabad">Hyderabad</option>
+                            </select>
+                        </td>
+                        <td>Pass Type *</td>
+                        <td>
+                            <select name="pass_type" required>
+                                <option value="General">General</option>
+                            </select>
+                        </td>
+                    </tr>
+                </table>
+            </fieldset>
+
+            <br>
+
+            <fieldset>
+                <legend><b>Mode of Payment & Pass Collection</b></legend>
+                <table>
+                    <tr>
+                        <td>Payment Mode *</td>
+                        <td>
+                            <select name="payment_mode" required>
+                                <option value="Upi">Upi</option>
+                                <option value="Credit Card">Credit Card</option>
+                                <option value="Debit Card">Debit Card</option>
+                                <option value="Net Banking">Net Banking</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Pass Delivery Mode *</td>
+                        <td>
+                            <select name="delivery_mode" required>
+                                <option value="Home">Home</option>
+                                <option value="Counter">Counter</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Center at Which you want to collect Pass *</td>
+                        <td>
+                            <select name="collection_center" required>
+                                <option value="Hyderabad">Hyderabad</option>
+                                <option value="Warangal">Warangal</option>
+                            </select>
+                        </td>
+                    </tr>
+                </table>
+            </fieldset>
+
+
+            <br>
+            <center>
+                <table>
+                    <tr>
+                        <td>
+                            <img src="./images/logo2.jpg"
+                                alt="Captcha Image" width="150" height="40"
+                                style="background-color: maroon; color: white;">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" align="center">
+                            <input type="text" name="captcha"
+                                placeholder="Enter Captcha" required>
+                        </td>
+                    </tr>
+                </table>
+            </center>
+
+            <br>
+            <center>
+                <input type="submit" value="Submit">
+            </center>
+
+        </form>
+
+    </body>
+</html>
